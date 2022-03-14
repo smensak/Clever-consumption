@@ -16,6 +16,7 @@
 		7E0B4E9F27DF5D8400C9581E /* Clever_consumptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E9E27DF5D8400C9581E /* Clever_consumptionTests.swift */; };
 		7E0B4EA927DF5D8400C9581E /* Clever_consumptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4EA827DF5D8400C9581E /* Clever_consumptionUITests.swift */; };
 		7E0B4EAB27DF5D8400C9581E /* Clever_consumptionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4EAA27DF5D8400C9581E /* Clever_consumptionUITestsLaunchTests.swift */; };
+		7E0B4EB827DF629800C9581E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4EB727DF629800C9581E /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7E0B4EA427DF5D8400C9581E /* Clever consumptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clever consumptionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B4EA827DF5D8400C9581E /* Clever_consumptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clever_consumptionUITests.swift; sourceTree = "<group>"; };
 		7E0B4EAA27DF5D8400C9581E /* Clever_consumptionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clever_consumptionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E0B4EB727DF629800C9581E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7E0B4E7B27DF5D8000C9581E = {
 			isa = PBXGroup;
 			children = (
+				7E0B4EB727DF629800C9581E /* README */,
 				7E0B4E8627DF5D8100C9581E /* Clever consumption */,
 				7E0B4E9D27DF5D8400C9581E /* Clever consumptionTests */,
 				7E0B4EA727DF5D8400C9581E /* Clever consumptionUITests */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0B4EB827DF629800C9581E /* README in Resources */,
 				7E0B4E9427DF5D8300C9581E /* LaunchScreen.storyboard in Resources */,
 				7E0B4E9127DF5D8300C9581E /* Assets.xcassets in Resources */,
 				7E0B4E8F27DF5D8100C9581E /* Main.storyboard in Resources */,
