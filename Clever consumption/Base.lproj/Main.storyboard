@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="Vjs-YZ-xmn">
             <objects>
                 <viewController id="jA0-rB-cJQ" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="ERS-86-poT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="1mA-UU-LnD"/>
+                    <tabBarItem key="tabBarItem" title="" image="Water-1" landscapeImage="Water-1" largeContentSizeImage="Water-1" selectedImage="Water" id="1mA-UU-LnD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msl-QN-feg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1009" y="243"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="gC8-Tf-Rgb">
             <objects>
                 <viewController id="o7I-ER-beZ" sceneMemberID="viewController">
@@ -34,13 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="I9c-Kc-t01"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TS7-G9-XB5"/>
+                    <tabBarItem key="tabBarItem" title="" image="Gas-1" landscapeImage="Gas-1" largeContentSizeImage="Gas-1" selectedImage="Gas" id="TS7-G9-XB5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MeO-Co-48a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33" y="668"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="YaT-3a-rdR">
             <objects>
                 <viewController id="jEr-ay-OHa" sceneMemberID="viewController">
@@ -50,11 +50,27 @@
                         <viewLayoutGuide key="safeArea" id="st6-Nn-c8H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="h3b-NI-HN2"/>
+                    <tabBarItem key="tabBarItem" title="" image="Chart-1" landscapeImage="Chart-1" largeContentSizeImage="Chart-1" selectedImage="Chart" id="h3b-NI-HN2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-DW-aU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="-185"/>
+            <point key="canvasLocation" x="-774" y="-552"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wSJ-n1-gNi">
+            <objects>
+                <viewController id="csf-W3-bfw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIL-T9-4wo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Irv-Ai-dVB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Electricity-1" landscapeImage="Electricity-1" largeContentSizeImage="Electricity-1" selectedImage="Electricity" id="Ymd-yu-wIc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDc-cJ-Y0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="-507"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="523-S5-LFl">
@@ -64,19 +80,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="jEr-ay-OHa" kind="relationship" relationship="viewControllers" id="NtO-IO-nHQ"/>
                         <segue destination="jA0-rB-cJQ" kind="relationship" relationship="viewControllers" id="TrH-Vp-2k3"/>
                         <segue destination="o7I-ER-beZ" kind="relationship" relationship="viewControllers" id="ogd-0b-ALv"/>
+                        <segue destination="csf-W3-bfw" kind="relationship" relationship="viewControllers" id="RxF-p4-Jjd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6Y-ir-5fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-957" y="242"/>
+            <point key="canvasLocation" x="-1552" y="242"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Chart" width="32" height="32"/>
+        <image name="Chart-1" width="32" height="32"/>
+        <image name="Electricity" width="32" height="32"/>
+        <image name="Electricity-1" width="32" height="32"/>
+        <image name="Gas" width="32" height="32"/>
+        <image name="Gas-1" width="32" height="32"/>
+        <image name="Water" width="32" height="32"/>
+        <image name="Water-1" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
