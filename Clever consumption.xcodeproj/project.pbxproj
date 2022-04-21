@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E044FE32800328D001D1D9B /* ElectricityRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E044FE22800328D001D1D9B /* ElectricityRecord.swift */; };
+		7E044FE52800329E001D1D9B /* WaterRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E044FE42800329E001D1D9B /* WaterRecord.swift */; };
+		7E044FE7280032B6001D1D9B /* NaturalGasRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E044FE6280032B6001D1D9B /* NaturalGasRecord.swift */; };
 		7E0B4E8827DF5D8100C9581E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8727DF5D8100C9581E /* AppDelegate.swift */; };
 		7E0B4E8A27DF5D8100C9581E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8927DF5D8100C9581E /* SceneDelegate.swift */; };
-		7E0B4E8C27DF5D8100C9581E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8B27DF5D8100C9581E /* ViewController.swift */; };
+		7E0B4E8C27DF5D8100C9581E /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8B27DF5D8100C9581E /* OverviewViewController.swift */; };
 		7E0B4E8F27DF5D8100C9581E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8D27DF5D8100C9581E /* Main.storyboard */; };
 		7E0B4E9127DF5D8300C9581E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4E9027DF5D8300C9581E /* Assets.xcassets */; };
 		7E0B4E9427DF5D8300C9581E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4E9227DF5D8300C9581E /* LaunchScreen.storyboard */; };
 		7E0B4E9F27DF5D8400C9581E /* Clever_consumptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E9E27DF5D8400C9581E /* Clever_consumptionTests.swift */; };
 		7E0B4EA927DF5D8400C9581E /* Clever_consumptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4EA827DF5D8400C9581E /* Clever_consumptionUITests.swift */; };
 		7E0B4EAB27DF5D8400C9581E /* Clever_consumptionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4EAA27DF5D8400C9581E /* Clever_consumptionUITestsLaunchTests.swift */; };
+		7E0B4EB827DF629800C9581E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4EB727DF629800C9581E /* README */; };
+		7E0BE0AA28003FCF009358F9 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0BE0A928003FCF009358F9 /* Tips.swift */; };
+		7E6C0A7128116F8B001BEE0F /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7028116F8B001BEE0F /* WaterViewController.swift */; };
+		7E6C0A7328116F95001BEE0F /* GasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7228116F95001BEE0F /* GasViewController.swift */; };
+		7E6C0A7528116FA1001BEE0F /* ElectricityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7428116FA1001BEE0F /* ElectricityViewController.swift */; };
+		7E6C0A7828117566001BEE0F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7628117566001BEE0F /* CustomTableViewCell.swift */; };
+		7E6C0A7928117566001BEE0F /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7728117566001BEE0F /* CustomTableViewCell.xib */; };
+		D5DD56A60DAF067781C6C8EA /* Pods_Clever_consumption.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E13306118133909C578EC4 /* Pods_Clever_consumption.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16C1490C752421C65E640EAB /* Pods-Clever consumption.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clever consumption.release.xcconfig"; path = "Target Support Files/Pods-Clever consumption/Pods-Clever consumption.release.xcconfig"; sourceTree = "<group>"; };
+		61E13306118133909C578EC4 /* Pods_Clever_consumption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clever_consumption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E044FE22800328D001D1D9B /* ElectricityRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityRecord.swift; sourceTree = "<group>"; };
+		7E044FE42800329E001D1D9B /* WaterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRecord.swift; sourceTree = "<group>"; };
+		7E044FE6280032B6001D1D9B /* NaturalGasRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalGasRecord.swift; sourceTree = "<group>"; };
 		7E0B4E8427DF5D8100C9581E /* Clever consumption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clever consumption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B4E8727DF5D8100C9581E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E0B4E8927DF5D8100C9581E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E0B4E8B27DF5D8100C9581E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E0B4E8B27DF5D8100C9581E /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		7E0B4E8E27DF5D8100C9581E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E0B4E9027DF5D8300C9581E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0B4E9327DF5D8300C9581E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,14 @@
 		7E0B4EA427DF5D8400C9581E /* Clever consumptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clever consumptionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B4EA827DF5D8400C9581E /* Clever_consumptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clever_consumptionUITests.swift; sourceTree = "<group>"; };
 		7E0B4EAA27DF5D8400C9581E /* Clever_consumptionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clever_consumptionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E0B4EB727DF629800C9581E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		7E0BE0A928003FCF009358F9 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		7E6C0A7028116F8B001BEE0F /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		7E6C0A7228116F95001BEE0F /* GasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasViewController.swift; sourceTree = "<group>"; };
+		7E6C0A7428116FA1001BEE0F /* ElectricityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewController.swift; sourceTree = "<group>"; };
+		7E6C0A7628117566001BEE0F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7E6C0A7728117566001BEE0F /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		B3C9C3056A7011A18E97B4B9 /* Pods-Clever consumption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clever consumption.debug.xcconfig"; path = "Target Support Files/Pods-Clever consumption/Pods-Clever consumption.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DD56A60DAF067781C6C8EA /* Pods_Clever_consumption.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +101,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455DF19DE5E4BA5A29532ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9C3056A7011A18E97B4B9 /* Pods-Clever consumption.debug.xcconfig */,
+				16C1490C752421C65E640EAB /* Pods-Clever consumption.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E044FDF28003223001D1D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E044FE22800328D001D1D9B /* ElectricityRecord.swift */,
+				7E044FE42800329E001D1D9B /* WaterRecord.swift */,
+				7E044FE6280032B6001D1D9B /* NaturalGasRecord.swift */,
+				7E0BE0A928003FCF009358F9 /* Tips.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E044FE028003229001D1D9B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E0B4E8B27DF5D8100C9581E /* OverviewViewController.swift */,
+				7E6C0A7028116F8B001BEE0F /* WaterViewController.swift */,
+				7E6C0A7228116F95001BEE0F /* GasViewController.swift */,
+				7E6C0A7428116FA1001BEE0F /* ElectricityViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E044FE128003243001D1D9B /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				7E0B4E8727DF5D8100C9581E /* AppDelegate.swift */,
+				7E0B4E8927DF5D8100C9581E /* SceneDelegate.swift */,
+				7E0B4E8D27DF5D8100C9581E /* Main.storyboard */,
+				7E0B4E9027DF5D8300C9581E /* Assets.xcassets */,
+				7E0B4E9227DF5D8300C9581E /* LaunchScreen.storyboard */,
+				7E6C0A7628117566001BEE0F /* CustomTableViewCell.swift */,
+				7E6C0A7728117566001BEE0F /* CustomTableViewCell.xib */,
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
 		7E0B4E7B27DF5D8000C9581E = {
 			isa = PBXGroup;
 			children = (
+				7E0B4EB727DF629800C9581E /* README */,
 				7E0B4E8627DF5D8100C9581E /* Clever consumption */,
 				7E0B4E9D27DF5D8400C9581E /* Clever consumptionTests */,
 				7E0B4EA727DF5D8400C9581E /* Clever consumptionUITests */,
 				7E0B4E8527DF5D8100C9581E /* Products */,
+				455DF19DE5E4BA5A29532ABC /* Pods */,
+				B2444EF05A36B365240A1D30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +172,10 @@
 		7E0B4E8627DF5D8100C9581E /* Clever consumption */ = {
 			isa = PBXGroup;
 			children = (
-				7E0B4E8727DF5D8100C9581E /* AppDelegate.swift */,
-				7E0B4E8927DF5D8100C9581E /* SceneDelegate.swift */,
-				7E0B4E8B27DF5D8100C9581E /* ViewController.swift */,
-				7E0B4E8D27DF5D8100C9581E /* Main.storyboard */,
-				7E0B4E9027DF5D8300C9581E /* Assets.xcassets */,
-				7E0B4E9227DF5D8300C9581E /* LaunchScreen.storyboard */,
 				7E0B4E9527DF5D8300C9581E /* Info.plist */,
+				7E044FE128003243001D1D9B /* Etc */,
+				7E044FE028003229001D1D9B /* View Controllers */,
+				7E044FDF28003223001D1D9B /* Model */,
 			);
 			path = "Clever consumption";
 			sourceTree = "<group>";
@@ -127,6 +197,14 @@
 			path = "Clever consumptionUITests";
 			sourceTree = "<group>";
 		};
+		B2444EF05A36B365240A1D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61E13306118133909C578EC4 /* Pods_Clever_consumption.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E0B4EAE27DF5D8400C9581E /* Build configuration list for PBXNativeTarget "Clever consumption" */;
 			buildPhases = (
+				E65444A95D3D1DAA80E6E64A /* [CP] Check Pods Manifest.lock */,
 				7E0B4E8027DF5D8100C9581E /* Sources */,
 				7E0B4E8127DF5D8100C9581E /* Frameworks */,
 				7E0B4E8227DF5D8100C9581E /* Resources */,
+				88E4F053BB0CAFE99F6A7D6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,8 +311,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0B4EB827DF629800C9581E /* README in Resources */,
 				7E0B4E9427DF5D8300C9581E /* LaunchScreen.storyboard in Resources */,
 				7E0B4E9127DF5D8300C9581E /* Assets.xcassets in Resources */,
+				7E6C0A7928117566001BEE0F /* CustomTableViewCell.xib in Resources */,
 				7E0B4E8F27DF5D8100C9581E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,13 +335,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88E4F053BB0CAFE99F6A7D6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clever consumption/Pods-Clever consumption-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clever consumption/Pods-Clever consumption-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clever consumption/Pods-Clever consumption-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65444A95D3D1DAA80E6E64A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clever consumption-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E0B4E8027DF5D8100C9581E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0B4E8C27DF5D8100C9581E /* ViewController.swift in Sources */,
+				7E6C0A7528116FA1001BEE0F /* ElectricityViewController.swift in Sources */,
+				7E044FE52800329E001D1D9B /* WaterRecord.swift in Sources */,
+				7E6C0A7828117566001BEE0F /* CustomTableViewCell.swift in Sources */,
+				7E0B4E8C27DF5D8100C9581E /* OverviewViewController.swift in Sources */,
 				7E0B4E8827DF5D8100C9581E /* AppDelegate.swift in Sources */,
+				7E6C0A7328116F95001BEE0F /* GasViewController.swift in Sources */,
+				7E044FE32800328D001D1D9B /* ElectricityRecord.swift in Sources */,
+				7E0BE0AA28003FCF009358F9 /* Tips.swift in Sources */,
+				7E044FE7280032B6001D1D9B /* NaturalGasRecord.swift in Sources */,
+				7E6C0A7128116F8B001BEE0F /* WaterViewController.swift in Sources */,
 				7E0B4E8A27DF5D8100C9581E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +566,7 @@
 		};
 		7E0B4EAF27DF5D8400C9581E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C9C3056A7011A18E97B4B9 /* Pods-Clever consumption.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +595,7 @@
 		};
 		7E0B4EB027DF5D8400C9581E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C1490C752421C65E640EAB /* Pods-Clever consumption.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
