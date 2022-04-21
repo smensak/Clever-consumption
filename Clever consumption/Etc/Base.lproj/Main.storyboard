@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3gQ-4F-IL2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Water Consumption-->
+        <scene sceneID="AvI-4W-Rg9">
+            <objects>
+                <tableViewController id="DKq-jt-4zI" customClass="WaterViewController" customModule="Clever_consumption" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="ano-oi-N5P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="Tip of a day" id="lY7-mR-CgK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TipCustomCell" rowHeight="150" id="HmB-UW-fDm" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HmB-UW-fDm" id="X2o-WC-HkY">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Daily consumption" id="Jfg-Xc-4zP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayCustomCell" rowHeight="150" id="5R9-oq-yVf" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="249.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5R9-oq-yVf" id="UQf-9q-U2a">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Weekly consumption" id="0Q6-YQ-6Ar">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeekCustomCell" rowHeight="150" id="dyf-YU-5gw" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="449.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dyf-YU-5gw" id="uvP-wO-Rcz">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Monthly consumption" id="ft3-G5-Ybk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MonthCustomCell" rowHeight="150" id="2gs-yG-fx7" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="649.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2gs-yG-fx7" id="Asz-Wu-2DV">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="DKq-jt-4zI" id="rOW-Pt-YaM"/>
+                            <outlet property="delegate" destination="DKq-jt-4zI" id="3D5-o3-CUQ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Water-1" landscapeImage="Water-1" largeContentSizeImage="Water-1" selectedImage="Water" id="fof-7W-GpS"/>
+                    <navigationItem key="navigationItem" title="Water Consumption" largeTitleDisplayMode="always" id="cMb-cp-Ofu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="cp3-ln-XCs" kind="show" identifier="waterDetail" id="kXQ-RT-ofl"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqG-vf-p1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="-230"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="RXW-1S-9wW">
+            <objects>
+                <navigationController id="BmC-cQ-iBF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="S5j-C2-dNT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQ1-vR-5wN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jEr-ay-OHa" kind="relationship" relationship="rootViewController" id="abV-jy-ZZF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XzS-Dp-lyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-992"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="8S6-37-TrV">
+            <objects>
+                <navigationController id="Sli-y0-P9D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kln-QU-xQO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8pz-so-75Z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DKq-jt-4zI" kind="relationship" relationship="rootViewController" id="07e-Kg-cNk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8c-6t-hmz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-230"/>
+        </scene>
+        <!--Total consumption-->
+        <scene sceneID="YaT-3a-rdR">
+            <objects>
+                <viewController id="jEr-ay-OHa" customClass="OverviewViewController" customModule="Clever_consumption" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mgY-04-exj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZJ-jJ-DKs">
+                                <rect key="frame" x="107" y="88" width="200.5" height="33"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-l9-WpX">
+                                        <rect key="frame" x="1" y="1" width="198.5" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PP8-dD-5xX">
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Day"/>
+                                                <connections>
+                                                    <action selector="buttonSelected:" destination="jEr-ay-OHa" eventType="touchUpInside" id="Vml-Xm-cYn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G14-qO-w34">
+                                                <rect key="frame" x="66.5" y="0.0" width="65.5" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Week"/>
+                                                <connections>
+                                                    <action selector="buttonSelected:" destination="jEr-ay-OHa" eventType="touchUpInside" id="WqS-Nn-qhh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-eM-yHQ">
+                                                <rect key="frame" x="133" y="0.0" width="65.5" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Month"/>
+                                                <connections>
+                                                    <action selector="buttonSelected:" destination="jEr-ay-OHa" eventType="touchUpInside" id="34V-YP-Hi4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="qoy-l9-WpX" firstAttribute="top" secondItem="aZJ-jJ-DKs" secondAttribute="top" constant="1" id="CEO-8D-8W5"/>
+                                    <constraint firstAttribute="bottom" secondItem="qoy-l9-WpX" secondAttribute="bottom" constant="1" id="fsd-b4-c1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="qoy-l9-WpX" secondAttribute="trailing" constant="1" id="ii3-6W-dSw"/>
+                                    <constraint firstItem="qoy-l9-WpX" firstAttribute="leading" secondItem="aZJ-jJ-DKs" secondAttribute="leading" constant="1" id="uW2-RM-GOW"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="08F-0f-4wF">
+                                <rect key="frame" x="15" y="172" width="384" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-a4-ayH">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-r2-dAi">
+                                                <rect key="frame" x="136" y="8" width="54" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[trend description]  [total cost]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-4w-Luc">
+                                                <rect key="frame" x="136" y="48" width="142" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="DGD-Wu-2tl">
+                                                <rect key="frame" x="8" y="14" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="w7F-gH-yBa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-75-ll7">
+                                        <rect key="frame" x="0.0" y="142" width="384" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-mq-41x">
+                                                <rect key="frame" x="136" y="8" width="66" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[trend description]  [total cost]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3s-ul-eva">
+                                                <rect key="frame" x="136" y="48" width="142" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="ote-c6-DKj">
+                                                <rect key="frame" x="8" y="14" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="QJw-kN-iVt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-eG-qKe">
+                                        <rect key="frame" x="0.0" y="284" width="384" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Natural gas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTk-JR-dTg">
+                                                <rect key="frame" x="136" y="8" width="128" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[trend description]  [total cost]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H01-gM-lim">
+                                                <rect key="frame" x="136" y="48" width="142" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="4q6-H6-Yd4">
+                                                <rect key="frame" x="8" y="14" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="xBX-nb-nqG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laA-46-y6s">
+                                        <rect key="frame" x="0.0" y="426" width="384" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electricity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdT-ly-s6k">
+                                                <rect key="frame" x="136" y="8" width="110" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[trend description]  [total cost]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oO-Hy-6gi">
+                                                <rect key="frame" x="136" y="48" width="142" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="FLi-zi-fHV">
+                                                <rect key="frame" x="8" y="14" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="t4W-tj-EQ0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="st6-Nn-c8H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aZJ-jJ-DKs" firstAttribute="top" secondItem="st6-Nn-c8H" secondAttribute="top" id="WyV-tg-9EF"/>
+                            <constraint firstItem="aZJ-jJ-DKs" firstAttribute="centerX" secondItem="st6-Nn-c8H" secondAttribute="centerX" id="bBh-uc-Ho0"/>
+                            <constraint firstItem="08F-0f-4wF" firstAttribute="leading" secondItem="st6-Nn-c8H" secondAttribute="leading" constant="15" id="c3s-UD-APV"/>
+                            <constraint firstItem="08F-0f-4wF" firstAttribute="top" secondItem="st6-Nn-c8H" secondAttribute="top" constant="84" id="dPT-9X-qTX"/>
+                            <constraint firstItem="st6-Nn-c8H" firstAttribute="trailing" secondItem="08F-0f-4wF" secondAttribute="trailing" constant="15" id="tmH-Mq-rKR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Chart-1" landscapeImage="Chart-1" largeContentSizeImage="Chart-1" selectedImage="Chart" id="h3b-NI-HN2"/>
+                    <navigationItem key="navigationItem" title="Total consumption" id="r1r-bJ-99w"/>
+                    <connections>
+                        <outlet property="buttonView" destination="aZJ-jJ-DKs" id="UyT-BV-F45"/>
+                        <outlet property="dayButton" destination="PP8-dD-5xX" id="Fh3-kg-tnR"/>
+                        <outlet property="monthButton" destination="1oe-eM-yHQ" id="310-hj-umZ"/>
+                        <outlet property="stackView" destination="qoy-l9-WpX" id="xsE-l0-d1P"/>
+                        <outlet property="weekButton" destination="G14-qO-w34" id="dlE-e1-uMy"/>
+                        <outletCollection property="views" destination="NHa-a4-ayH" collectionClass="NSMutableArray" id="D8i-Ik-Dgb"/>
+                        <outletCollection property="views" destination="g9c-75-ll7" collectionClass="NSMutableArray" id="o7l-SF-Rg9"/>
+                        <outletCollection property="views" destination="LGh-eG-qKe" collectionClass="NSMutableArray" id="S2d-8f-xqC"/>
+                        <outletCollection property="views" destination="laA-46-y6s" collectionClass="NSMutableArray" id="2Di-FI-mOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfy-DW-aU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="-992"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="523-S5-LFl">
+            <objects>
+                <tabBarController id="3gQ-4F-IL2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJY-pp-99F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BmC-cQ-iBF" kind="relationship" relationship="viewControllers" id="nP5-et-dmu"/>
+                        <segue destination="Sli-y0-P9D" kind="relationship" relationship="viewControllers" id="SF6-yB-MgY"/>
+                        <segue destination="bwr-gN-DU7" kind="relationship" relationship="viewControllers" id="zs7-Bu-gt5"/>
+                        <segue destination="oM0-a9-zMF" kind="relationship" relationship="viewControllers" id="qoe-7t-tb9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6Y-ir-5fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1823" y="893"/>
+        </scene>
+        <!--Electricity consumption-->
+        <scene sceneID="HSs-CW-Lln">
+            <objects>
+                <tableViewController id="CWt-tc-tph" customClass="ElectricityViewController" customModule="Clever_consumption" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="hEf-NN-stD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="Tip of a day" id="F3E-PW-yPe">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TipCustomCell" rowHeight="150" id="8bw-tq-IVN" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8bw-tq-IVN" id="CZ3-3s-tGU">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Daily consumption" id="q4a-mt-2fi">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayCustomCell" rowHeight="150" id="uOx-2k-lUK" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="249.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uOx-2k-lUK" id="aq2-PW-3dS">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Weekly consumption" id="PQa-g2-1xB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeekCustomCell" rowHeight="150" id="yHs-Nu-Kva" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="449.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yHs-Nu-Kva" id="Kr0-nA-FGY">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Monthly consumption" id="1a4-kF-eQ3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MonthCustomCell" rowHeight="150" id="P3L-rH-S9Q" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="649.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P3L-rH-S9Q" id="jUQ-4x-XNc">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="CWt-tc-tph" id="LAc-R7-TSb"/>
+                            <outlet property="delegate" destination="CWt-tc-tph" id="vYo-MQ-DXU"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Electricity-1" landscapeImage="Electricity-1" largeContentSizeImage="Electricity-1" selectedImage="Electricity" id="1Cd-nA-mQw"/>
+                    <navigationItem key="navigationItem" title="Electricity consumption" id="yvz-2B-tCs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Lhk-kZ-WBd" kind="show" identifier="electricityDetail" id="Mzt-T1-i7u"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wF-OM-1Vw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="1328"/>
+        </scene>
+        <!--Electricity consumption detail-->
+        <scene sceneID="GKq-HE-5t4">
+            <objects>
+                <viewController id="Lhk-kZ-WBd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTX-oz-1km">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ymu-x5-THm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Electricity consumption detail" id="iZV-bJ-2SO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyH-dO-d1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2358" y="1328"/>
+        </scene>
+        <!--Gas consumption-->
+        <scene sceneID="VQo-Wq-uQu">
+            <objects>
+                <tableViewController id="R9n-Nd-fwH" customClass="GasViewController" customModule="Clever_consumption" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="bZT-dI-MwD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="Tip of a day" id="S52-na-SVf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TipCustomCell" rowHeight="150" id="NpZ-FO-ReY" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NpZ-FO-ReY" id="Vgr-eg-7U5">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Daily consumption" id="JSW-OM-k3z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayCustomCell" rowHeight="150" id="ghJ-oY-vri" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="249.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ghJ-oY-vri" id="qkM-lr-SoP">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Weekly consumption" id="7nr-rT-1tS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeekCustomCell" rowHeight="150" id="ere-tv-maG" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="449.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ere-tv-maG" id="j5F-if-KUJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Monthly consumption" id="jDD-ML-BeK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MonthCustomCell" rowHeight="150" id="qzR-dG-Uiy" customClass="CustomTableViewCell" customModule="Clever_consumption" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="649.5" width="374" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qzR-dG-Uiy" id="3xk-zl-c9b">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="R9n-Nd-fwH" id="PCM-zM-I85"/>
+                            <outlet property="delegate" destination="R9n-Nd-fwH" id="k5u-eZ-pIZ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Gas-1" landscapeImage="Gas-1" largeContentSizeImage="Gas-1" selectedImage="Gas" id="NqR-YY-mQQ"/>
+                    <navigationItem key="navigationItem" title="Gas consumption" id="AYs-Pt-uZ0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="ErW-0s-628" kind="show" identifier="gasDetail" id="INL-Ga-csD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lh5-Oa-V1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="534"/>
+        </scene>
+        <!--Gas consumption detail-->
+        <scene sceneID="ngZ-Zg-DtY">
+            <objects>
+                <viewController id="ErW-0s-628" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QnL-IS-12S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SQn-jS-rkC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gas consumption detail" id="c4p-Vq-kgf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjj-V0-kTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2358" y="534"/>
+        </scene>
+        <!--Water consumption detail-->
+        <scene sceneID="796-fV-Nnt">
+            <objects>
+                <viewController id="cp3-ln-XCs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Rd-3R-h7v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-ap-PX6">
+                                <rect key="frame" x="32" y="118" width="350" height="350"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a0f-ap-PX6" secondAttribute="height" multiplier="1:1" id="TYK-vL-tkA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLf-RS-Tm1">
+                                <rect key="frame" x="32" y="490" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCn-5H-NG8">
+                                <rect key="frame" x="32" y="535" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkW-I5-o6x">
+                                <rect key="frame" x="32" y="581" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BFI-PT-m7w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a0f-ap-PX6" firstAttribute="top" secondItem="BFI-PT-m7w" secondAttribute="top" constant="30" id="4NJ-Mu-P2k"/>
+                            <constraint firstItem="BFI-PT-m7w" firstAttribute="bottom" secondItem="a0f-ap-PX6" secondAttribute="bottom" constant="345" id="4rg-JO-k7m"/>
+                            <constraint firstItem="BFI-PT-m7w" firstAttribute="trailing" secondItem="a0f-ap-PX6" secondAttribute="trailing" constant="32" id="9Lr-fd-8XN"/>
+                            <constraint firstItem="a0f-ap-PX6" firstAttribute="leading" secondItem="BFI-PT-m7w" secondAttribute="leading" constant="32" id="ziy-eP-aSo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Water consumption detail" id="Dee-9W-VjE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncy-VQ-kiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.971014492754" y="-230.35714285714283"/>
+        </scene>
+        <!--Gas consumption-->
+        <scene sceneID="vRU-6z-SbC">
+            <objects>
+                <navigationController title="Gas consumption" id="bwr-gN-DU7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="8Vr-7f-Nx0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="78X-3g-t1i">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R9n-Nd-fwH" kind="relationship" relationship="rootViewController" id="uy9-9K-Sye"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OfX-rf-dpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="534"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="P11-ak-tMa">
+            <objects>
+                <navigationController id="oM0-a9-zMF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vsv-Dc-2np"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qs1-Ir-Ccm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CWt-tc-tph" kind="relationship" relationship="rootViewController" id="1tG-qW-gsV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpo-Fw-iS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="1328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chart" width="32" height="32"/>
+        <image name="Chart-1" width="32" height="32"/>
+        <image name="Electricity" width="32" height="32"/>
+        <image name="Electricity-1" width="32" height="32"/>
+        <image name="Gas" width="32" height="32"/>
+        <image name="Gas-1" width="32" height="32"/>
+        <image name="Icon" width="256" height="256"/>
+        <image name="Water" width="32" height="32"/>
+        <image name="Water-1" width="32" height="32"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
