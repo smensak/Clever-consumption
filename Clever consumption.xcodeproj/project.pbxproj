@@ -12,7 +12,6 @@
 		7E044FE7280032B6001D1D9B /* NaturalGasRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E044FE6280032B6001D1D9B /* NaturalGasRecord.swift */; };
 		7E0B4E8827DF5D8100C9581E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8727DF5D8100C9581E /* AppDelegate.swift */; };
 		7E0B4E8A27DF5D8100C9581E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8927DF5D8100C9581E /* SceneDelegate.swift */; };
-		7E0B4E8C27DF5D8100C9581E /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8B27DF5D8100C9581E /* OverviewViewController.swift */; };
 		7E0B4E8F27DF5D8100C9581E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4E8D27DF5D8100C9581E /* Main.storyboard */; };
 		7E0B4E9127DF5D8300C9581E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4E9027DF5D8300C9581E /* Assets.xcassets */; };
 		7E0B4E9427DF5D8300C9581E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0B4E9227DF5D8300C9581E /* LaunchScreen.storyboard */; };
@@ -26,6 +25,10 @@
 		7E6C0A7528116FA1001BEE0F /* ElectricityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7428116FA1001BEE0F /* ElectricityViewController.swift */; };
 		7E6C0A7828117566001BEE0F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7628117566001BEE0F /* CustomTableViewCell.swift */; };
 		7E6C0A7928117566001BEE0F /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7728117566001BEE0F /* CustomTableViewCell.xib */; };
+		7E6C0A7B28119E60001BEE0F /* WaterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7A28119E60001BEE0F /* WaterDetailViewController.swift */; };
+		7E6C0A7D28119E6D001BEE0F /* GasDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7C28119E6D001BEE0F /* GasDetailViewController.swift */; };
+		7E6C0A7F28119E7A001BEE0F /* ElectricityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A7E28119E7A001BEE0F /* ElectricityDetailViewController.swift */; };
+		7E6C0A81281201C7001BEE0F /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6C0A80281201C7001BEE0F /* SummaryViewController.swift */; };
 		D5DD56A60DAF067781C6C8EA /* Pods_Clever_consumption.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E13306118133909C578EC4 /* Pods_Clever_consumption.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +58,6 @@
 		7E0B4E8427DF5D8100C9581E /* Clever consumption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clever consumption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0B4E8727DF5D8100C9581E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E0B4E8927DF5D8100C9581E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E0B4E8B27DF5D8100C9581E /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		7E0B4E8E27DF5D8100C9581E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E0B4E9027DF5D8300C9581E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0B4E9327DF5D8300C9581E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,10 @@
 		7E6C0A7428116FA1001BEE0F /* ElectricityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewController.swift; sourceTree = "<group>"; };
 		7E6C0A7628117566001BEE0F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		7E6C0A7728117566001BEE0F /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		7E6C0A7A28119E60001BEE0F /* WaterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDetailViewController.swift; sourceTree = "<group>"; };
+		7E6C0A7C28119E6D001BEE0F /* GasDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasDetailViewController.swift; sourceTree = "<group>"; };
+		7E6C0A7E28119E7A001BEE0F /* ElectricityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityDetailViewController.swift; sourceTree = "<group>"; };
+		7E6C0A80281201C7001BEE0F /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		B3C9C3056A7011A18E97B4B9 /* Pods-Clever consumption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clever consumption.debug.xcconfig"; path = "Target Support Files/Pods-Clever consumption/Pods-Clever consumption.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,10 +130,13 @@
 		7E044FE028003229001D1D9B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7E0B4E8B27DF5D8100C9581E /* OverviewViewController.swift */,
 				7E6C0A7028116F8B001BEE0F /* WaterViewController.swift */,
 				7E6C0A7228116F95001BEE0F /* GasViewController.swift */,
 				7E6C0A7428116FA1001BEE0F /* ElectricityViewController.swift */,
+				7E6C0A7A28119E60001BEE0F /* WaterDetailViewController.swift */,
+				7E6C0A7C28119E6D001BEE0F /* GasDetailViewController.swift */,
+				7E6C0A7E28119E7A001BEE0F /* ElectricityDetailViewController.swift */,
+				7E6C0A80281201C7001BEE0F /* SummaryViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -385,14 +394,17 @@
 				7E6C0A7528116FA1001BEE0F /* ElectricityViewController.swift in Sources */,
 				7E044FE52800329E001D1D9B /* WaterRecord.swift in Sources */,
 				7E6C0A7828117566001BEE0F /* CustomTableViewCell.swift in Sources */,
-				7E0B4E8C27DF5D8100C9581E /* OverviewViewController.swift in Sources */,
+				7E6C0A7F28119E7A001BEE0F /* ElectricityDetailViewController.swift in Sources */,
 				7E0B4E8827DF5D8100C9581E /* AppDelegate.swift in Sources */,
 				7E6C0A7328116F95001BEE0F /* GasViewController.swift in Sources */,
 				7E044FE32800328D001D1D9B /* ElectricityRecord.swift in Sources */,
 				7E0BE0AA28003FCF009358F9 /* Tips.swift in Sources */,
+				7E6C0A7D28119E6D001BEE0F /* GasDetailViewController.swift in Sources */,
 				7E044FE7280032B6001D1D9B /* NaturalGasRecord.swift in Sources */,
 				7E6C0A7128116F8B001BEE0F /* WaterViewController.swift in Sources */,
 				7E0B4E8A27DF5D8100C9581E /* SceneDelegate.swift in Sources */,
+				7E6C0A7B28119E60001BEE0F /* WaterDetailViewController.swift in Sources */,
+				7E6C0A81281201C7001BEE0F /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

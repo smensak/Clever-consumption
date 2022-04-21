@@ -10,6 +10,8 @@ import UIKit
 import RealmSwift
 
 class WaterViewController : UITableViewController {
+    
+    var period: String?
 
     
     override func viewDidLoad() {
@@ -22,7 +24,7 @@ class WaterViewController : UITableViewController {
         let realm = try! Realm()
         
         let myTip = Tips()
-        myTip.text = "asdf"
+        myTip.text = "Some super usefull tip for saving energy"
         myTip.category = "water"
         
         let waterRecord = WaterRecord()
@@ -82,7 +84,14 @@ class WaterViewController : UITableViewController {
         switch indexPath.section {
         case 0:
             break
-        case 1...3:
+        case 1:
+            period = "day"
+            fallthrough
+        case 2:
+            period = "week"
+            fallthrough
+        case 3:
+            period = "month"
             performSegue(withIdentifier: "waterDetail", sender: self)
         default:
             break
@@ -90,7 +99,10 @@ class WaterViewController : UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        if segue.identifier == "waterDetail" {
+            let dvc = segue.destination as? WaterDetailViewController
+            dvc?.period = period
+        }
     }
     
     private func registerCell() {

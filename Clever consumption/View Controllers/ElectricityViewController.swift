@@ -10,6 +10,8 @@ import UIKit
 import RealmSwift
 
 class ElectricityViewController : UITableViewController {
+    
+    var period: String?
   
     override func viewDidLoad() {
         load()
@@ -21,7 +23,7 @@ class ElectricityViewController : UITableViewController {
         let realm = try! Realm()
         
         let myTip = Tips()
-        myTip.text = "asdf"
+        myTip.text = "Some super usefull tip for saving energy"
         myTip.category = "electricity"
         
         let electricityRecord = ElectricityRecord()
@@ -49,8 +51,8 @@ class ElectricityViewController : UITableViewController {
             
         case 1:
             id = "DayCustomCell"
-            let gasConsumption = realm.objects(NaturalGasRecord.self).sorted(byKeyPath: "date").first
-            title = String(gasConsumption?.amount ?? 0.0) + (gasConsumption?.units ?? " kWh")
+            let elConsumption = realm.objects(ElectricityRecord.self).sorted(byKeyPath: "date").first
+            title = String(elConsumption?.amount ?? 0.0) + (elConsumption?.units ?? " kWh")
             bodyText = "trend descr"
             
         case 2:
@@ -81,7 +83,14 @@ class ElectricityViewController : UITableViewController {
         switch indexPath.section {
         case 0:
             break
-        case 1...3:
+        case 1:
+            period = "day"
+            fallthrough
+        case 2:
+            period = "week"
+            fallthrough
+        case 3:
+            period = "month"
             performSegue(withIdentifier: "electricityDetail", sender: self)
         default:
             break
@@ -89,7 +98,10 @@ class ElectricityViewController : UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        if segue.identifier == "electricityDetail" {
+            let dvc = segue.destination as? ElectricityDetailViewController
+            dvc?.period = period
+        }
     }
     
     private func registerCell() {
@@ -104,7 +116,7 @@ class ElectricityViewController : UITableViewController {
         let realm = try! Realm()
         var end = days
         let elConsumption = realm.objects(ElectricityRecord.self).sorted(byKeyPath: "date")
-        if ( elConsumption.count < 6) {
+        if ( elConsumption.count < days) {
             end = elConsumption.count
         }
         let slice = elConsumption[0...end-1]

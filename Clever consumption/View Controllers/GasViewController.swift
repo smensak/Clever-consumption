@@ -11,6 +11,8 @@ import RealmSwift
 
 class GasViewController : UITableViewController {
     
+    var period: String?
+    
     override func viewDidLoad() {
         load()
         super.viewDidLoad()
@@ -21,7 +23,7 @@ class GasViewController : UITableViewController {
         let realm = try! Realm()
         
         let myTip = Tips()
-        myTip.text = "asdf"
+        myTip.text = "Some super usefull tip for saving energy"
         myTip.category = "gas"
         
         let gasRecord = NaturalGasRecord()
@@ -81,7 +83,14 @@ class GasViewController : UITableViewController {
         switch indexPath.section {
         case 0:
             break
-        case 1...3:
+        case 1:
+            period = "day"
+            fallthrough
+        case 2:
+            period = "week"
+            fallthrough
+        case 3:
+            period = "month"
             performSegue(withIdentifier: "gasDetail", sender: self)
         default:
             break
@@ -89,7 +98,10 @@ class GasViewController : UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        if segue.identifier == "gasDetail" {
+            let dvc = segue.destination as? GasDetailViewController
+            dvc?.period = period
+        }
     }
     
     private func registerCell() {
@@ -104,7 +116,7 @@ class GasViewController : UITableViewController {
         let realm = try! Realm()
         var end = days
         let gasConsumption = realm.objects(NaturalGasRecord.self).sorted(byKeyPath: "date")
-        if ( gasConsumption.count < 6) {
+        if ( gasConsumption.count < days) {
             end = gasConsumption.count
         }
         let slice = gasConsumption[0...end-1]
